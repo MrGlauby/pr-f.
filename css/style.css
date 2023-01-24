@@ -1,0 +1,133 @@
+* {
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body {
+	height: 100%;
+}
+body {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 16px;
+	background: #efefef;
+}
+/*wrapper
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#wrapper {
+	width: 1000px;
+	height: 100%;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden !important;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+	background-color: #333;
+	padding-bottom: 20px;
+}
+
+/*formulare
++++++++++++++++++++++++++++++++++++++++++*/
+#form {
+	display: table;
+	font-weight: bold;
+	background-color: #24d311;
+	padding: 20px;
+}
+
+#form h2 {
+	color: #efefef;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+	border-bottom: solid 2px #efefef;
+}
+#form form {
+	width: 500px;
+	box-shadow: 5px 5px 5px #000;
+	margin: 20px;
+	background-color: hsla(223,21%,93%,0.7);
+	padding: 10px;
+}
+#form form div {
+	padding: 5px;
+	margin: 2px;
+}
+#form form input {
+	display: inline-block;
+	width: 100%;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+#form form input[type="submit"] {
+	background-color: #198754;
+	margin: 5px 5%;
+	padding: 20px;
+	width: 90%;
+	color: #fff;
+	font-size: 1.5rem;
+}
+#form form input[type="reset"] {
+	background-color: #dc3545;
+	margin: 5px 5%;
+	padding: 20px;
+	width: 90%;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.error {
+	color: #dc3545;
+	padding: 5px;
+	margin-top: 5px;
+	display: inline-block;
+}
+
+input:focus {
+  border: solid 1px #dc3545;
+	box-shadow: none;
+	outline: none;
+	background-color: #ddd;
+}
+
+.ui-autocomplete {
+	background-color: rgba(29,109,192,0.8);
+	list-style-type: none;
+	padding: 1rem;
+	display: table-cell;
+	color: #cd0000;
+	cursor: pointer;
+	line-height: 1.5rem;
+	font-weight: bold;
+}
+
+.ui-autocomplete li {
+	background-color: rgba(172,224,167,0.7);
+	padding: 0.5rem;
+}
+.ui-autocomplete li:nth-of-type(odd){
+	background-color: #fff;
+}
+/* -------MEDIA QQUERY */
+@media (min-width: 440px) {
+    #wrapper {
+      width: 400px;
+    }
+  }
+  @media (min-width: 768px) {
+    #wrapper {
+      width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    #wrapper {
+      width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    #wrapper {
+      width: 1140px;
+    }
+}
