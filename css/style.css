@@ -17,8 +17,6 @@ body {
 	width: 1000px;
 	height: 100%;
 	min-height: 100%;
-	height: auto !important;
-	overflow: hidden !important;
 	margin: 0 auto;
 	position: relative;
 	top: 20px;
@@ -31,17 +29,10 @@ body {
 #form {
 	display: table;
 	font-weight: bold;
-	background-color: #24d311;
+	background-color: #6a6a6a;
 	padding: 20px;
 }
 
-#form h2 {
-	color: #efefef;
-	text-align: center;
-	padding: 5px;
-	cursor: pointer;
-	border-bottom: solid 2px #efefef;
-}
 #form form {
 	width: 500px;
 	box-shadow: 5px 5px 5px #000;
@@ -62,13 +53,18 @@ body {
 }
 
 #form form input[type="submit"] {
-	background-color: #198754;
+	background-color: #438f52;
 	margin: 5px 5%;
 	padding: 20px;
 	width: 90%;
 	color: #fff;
 	font-size: 1.5rem;
 }
+
+#form form input:hover{
+	background-color: rgb(98, 153, 126);
+}
+
 #form form input[type="reset"] {
 	background-color: #dc3545;
 	margin: 5px 5%;
@@ -76,6 +72,10 @@ body {
 	width: 90%;
 	color: #fff;
 	font-size: 1.5rem;
+}
+
+#form form input[type="reset"]:hover{
+	background-color: #cd7f7f;
 }
 
 .error {
@@ -103,13 +103,14 @@ input:focus {
 	font-weight: bold;
 }
 
-.ui-autocomplete li {
-	background-color: rgba(172,224,167,0.7);
+.ui-autocomplete li:hover{
+	background-color: rgba(33, 52, 31, 0.7);
 	padding: 0.5rem;
 }
 .ui-autocomplete li:nth-of-type(odd){
 	background-color: #fff;
 }
+
 /* -------MEDIA QQUERY */
 @media (min-width: 440px) {
     #wrapper {
